@@ -3,9 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
     <title>Lo-Fi Player</title>
   </head>
   <body>
-    <h1>Lofi Player</h1>
+    <main class="playerContainer">
+      <h1>Lo-Fi Player</h1>
+      <section class="playerControls">
+        <audio
+          aria-hidden="true"
+          id="player"
+          src="./assets/audio/lofi1.mp3"
+          loop
+        ></audio>
+        <button id="play-btn" aria-label="Play">▶️ Play</button>
+      </section>
+    </main>
+    <script src="./app.js"></script>
   </body>
 </html>
